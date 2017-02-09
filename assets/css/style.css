@@ -7,19 +7,11 @@ body {
   height: 100%;
 }
 
-.container {
-  min-height: 100%;
-  
-  height: 100%;
-  margin: 0 auto -105px;
-}
 
 
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
+
+
 
 
 /*general*/
@@ -29,17 +21,6 @@ body {
   margin: 0 auto;
   width: 100%;
   max-width: 960px;
-}
-
-h1,
-h2,
-h3,
-p {
-  margin-bottom: 20px;
-}
-
-p:last-child {
-  margin-bottom: 0;
 }
 
 h1,
@@ -65,21 +46,12 @@ h3 {
 
 /*header*/
 
-#masthead {
-  
-  z-index: 99;
-  margin: 0px;
-  overflow: auto;
-  width: 100%;
-  background-color: #fff;
-  
-  border-bottom: 2px solid #ccc;
-}
 
-#logo {
+
+.navbar-brand {
   width: 350px;
   height: 90px;
-  float: left;
+ 
   font-family: 'Georgia', Times, 'Times New Roman', serif;
   text-align: center;
   line-height: 90px;
@@ -90,12 +62,11 @@ h3 {
   background: #4aaaa5;
 }
 
-nav {
-  float: right;
-  margin-top: 25px;
+.navbar-default .navbar-brand {
+     color: #fff;
 }
 
-nav a {
+#nav {
   display: inline-block;
   margin-left: 15px;
   padding-left: 15px;
@@ -105,10 +76,13 @@ nav a {
   border-left: 1px solid #efefef;
 }
 
-nav a:first-child {
+#nav a:first-child {
   border-left: 0 none;
 }
 
+.media{
+  margin-bottom: 20px;
+}
 
 /*footer*/
 
@@ -127,23 +101,13 @@ footer {
 
 /*sidebar*/
 
-.sidebar {
-  padding: 30px;
-  width: 100%;
-  max-width: 270px;
-  float: right;
-  margin-bottom: 20px;
+#sidebar {
+  
   background: #fff;
-  border: 1px solid #ddd;
+ 
 }
 
-h3,
-.sidebar h2 {
-  padding-bottom: 20px;
-  margin-bottom: 15px;
-  line-height: 22px;
-  border-bottom: 2px solid #eee;
-}
+
 
 .social {
   width: 62px;
@@ -159,17 +123,11 @@ h3,
 
 /*main*/
 
-#main-container {
-  padding-top: 20px;
-  height: 1500px;
-  
-}
 
-.main-section {
+#main-section {
   padding: 30px;
-  margin: 0 0 40px 0;
-  width: 100%;
-  max-width: 650px;
+  margin-bottom: 40px; 
+  
   float: left;
   background: #fff;
   border: 1px solid #ddd;
@@ -260,115 +218,3 @@ input[type=submit] {
 }
 
 
-@media screen and (max-width: 768px) {
-
-  
-  
-  .main-container,
-  .sidebar
-
-  {
-
-    /* Box-model */
-    width: 100%;
-    padding: 10px;
-    max-width: 698px;
-   
-}
-.container
-
-{
-
-    /* Box-model */
-    width: 100%;
-   
-    max-width: 698px;
-   
-}
-  
-
-  .main-section{
-    padding-top: 20px;
-     max-width: 698px;
-
-  }
-
-  @media screen and (max-width: 640px) {
-
-  
-
-  
-  #main-container,
-  
-  {
-
-    /* Box-model */
-    width: 100%;
-    padding: 10px;
-    
-   
-
-  }
-
-  #masthead {
-    position: fixed;
-    width: 100%;
-    
-    
-  }
-
- #logo{
-   width: 100%;
-}
-
-nav { 
-  width: 100%;
-  padding-left: 60px;
-
-}
-
-#nav_about{
-  padding-left: 15px;
-  padding-right: 50px;
-}
- 
-#nav_contact{
-  padding-left: 50px;
-  padding-right: 15px;
-
-}
-
-#nav_portfolio{
-  padding-right: 50px;
-  padding-left: 50px;
-
-
-}
-
-  .main-section{
-    max-width: 598px;
-    margin: 20px;
-    margin-top: 170px;
-
-  }
-
-    .sidebar{
-      max-width: 598px;
-      margin-top: 40px;
-      margin-right: 20px;
-      padding: 20px; 
-    }
-
-  
- .work {
-  margin-bottom: 20px;
-
- }
-#connect1 {
-  width: 100%;
-    padding: 10px;
-    max-width: 
-}
-
-
-}
